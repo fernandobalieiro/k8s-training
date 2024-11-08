@@ -1,0 +1,6 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: quarkus-training-part2-configmap
+data:
+  QUARKUS_DATASOURCE_JDBC_URL: "jdbc:postgresql://postgresql.services.svc.cluster.local:5432/postgres"
