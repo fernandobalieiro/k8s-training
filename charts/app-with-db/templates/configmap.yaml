@@ -4,4 +4,4 @@ metadata:
   namespace: {{ .Release.Namespace }}
   name: {{ .Release.Name }}-configmap
 data:
-  QUARKUS_DATASOURCE_JDBC_URL: "jdbc:postgresql://postgres-postgresql:5432/postgres"
+{{- toYaml .Values.config | nindent 4 }}

@@ -19,6 +19,9 @@ imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
 
+config:
+  QUARKUS_DATASOURCE_JDBC_URL: "jdbc:postgresql://postgres-postgresql:5432/postgres"
+
 credentialsSecretName: database-credentials
 
 #This section builds out the service account more information can be found here: https://kubernetes.io/docs/concepts/security/service-accounts/
